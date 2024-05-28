@@ -8,33 +8,33 @@ const handleChange = (value: string) => {
 const App: React.FC = () => (
   <Space wrap>
     <Select
-      defaultValue="lucy"
+      defaultValue="2"
       style={{ width: 120 }}
       onChange={handleChange}
       options={[
-        { value: 'jack', label: 'Jack' },
-        { value: 'lucy', label: 'Lucy' },
-        { value: 'Yiminghe', label: 'yiminghe' },
-        { value: 'disabled', label: 'Disabled', disabled: true },
+        { value: '1', label: 'Jack' },
+        { value: '2', label: 'Lucy' },
+        { value: '3', label: 'yiminghe' },
+        { value: '4', label: 'Disabled', disabled: true },
       ]}
     />
     <Select
       defaultValue="lucy"
       style={{ width: 120 }}
       disabled
-      options={[{ value: 'lucy', label: 'Lucy' }]}
+      options={[{ value: '1', label: 'Lucy' }]}
     />
     <Select
       defaultValue="lucy"
       style={{ width: 120 }}
       loading
-      options={[{ value: 'lucy', label: 'Lucy' }]}
+      options={[{ value: '1', label: 'Lucy' }]}
     />
     <Select
       defaultValue="lucy"
       style={{ width: 120 }}
       allowClear
-      options={[{ value: 'lucy', label: 'Lucy' }]}
+      options={[{ value: '1', label: 'Lucy' }]}
     />
   </Space>
 );
